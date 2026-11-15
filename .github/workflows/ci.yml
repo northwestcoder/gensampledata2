@@ -6,6 +6,8 @@ jobs:
     strategy:
       matrix:
         python: ['3.14', '3.15']
+    env:
+      UV_PYTHON: ${{ matrix.python }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -23,6 +25,6 @@ jobs:
       - run: npm test
         working-directory: frontend
       - run: uv sync --locked --all-extras --python ${{ matrix.python }}
-      - run: uv run --locked pytest -q
-      - run: uv run --locked ruff check src tests
+      - run: uv run --locked --all-extras pytest -q
+      - run: uv run --locked --all-extras ruff check src tests
       - run: uv build --out-dir artifacts/dist

@@ -21,7 +21,7 @@ Local configuration, credentials, caches, `tmp/`, and generated `artifacts/` are
 ## Visual workbench
 
 ```sh
-uv run gensampledata serve
+uv run --extra web gensampledata serve
 ```
 
 Open **http://127.0.0.1:8767**. The local workbench includes:
@@ -139,7 +139,7 @@ The one consumed input moves into a sibling `processed/` directory. Unrelated fi
 Configure AWS through the normal boto3 credential chain, then explicitly publish a verified run:
 
 ```sh
-uv run gensampledata publish artifacts/runs/demo-001 \
+uv run --extra s3 gensampledata publish artifacts/runs/demo-001 \
   --bucket my-demo-bucket --prefix demos/retail
 ```
 
@@ -166,7 +166,7 @@ After installation, `uv run python gensampledata.py` translates the repository's
 ## Verification and benchmarks
 
 ```sh
-uv run pytest -q
+uv run --all-extras pytest -q
 uv run ruff check src tests
 npm --prefix frontend test
 npm --prefix frontend run build
