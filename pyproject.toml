@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gensampledata"
+version = "2.0.0"
+description = "Reproducible, related synthetic datasets for demos and identity-resolution testing"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["pydantic>=2.10,<3"]
+
+[project.optional-dependencies]
+web = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
+s3 = ["boto3>=1.35,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1", "ruff>=0.9", "build>=1.2"]
+
+[project.scripts]
+gensampledata = "sampledata.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sampledata"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"artifacts/workbench-dist" = "sampledata/static"
+"uv.lock" = "sampledata/data/uv.lock"
+"support" = "sampledata/data/support"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/sampledata", "support", "frontend/src", "frontend/index.html", "frontend/vite.config.ts", "frontend/package.json", "frontend/package-lock.json", "frontend/tsconfig.json", "README.md", "docs", "scenarios", "pyproject.toml", "uv.lock", "tests", "tools", "gensampledata.py", "settings.py", "datatypemap.py", "tracer_orig", ".python-version", "anvil.png"]
+
+[tool.hatch.build.targets.sdist.force-include]
+"artifacts/workbench-dist" = "artifacts/workbench-dist"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

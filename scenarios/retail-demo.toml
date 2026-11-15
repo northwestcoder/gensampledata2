@@ -1,0 +1,17 @@
+schema_version = 1
+profile = "legacy-retail"
+name = "retail-demo"
+people = 1000
+seed = 42
+reference_time = "2026-11-04T00:00:00Z"
+batch_size = 1000
+sources = ["customers", "transactions", "pos", "pos_transactions", "loyalty", "email", "clickstream", "mobile", "wifi", "safety", "locations", "custom"]
+formats = ["csv", "jsonl"]
+duplicate_fraction = 0.15
+copies_per_duplicate = 1
+overlap_fraction = 0.5
+corruption_probability = 0.25
+missing_probability = 0.02
+max_transactions = 4
+transaction_window = "full"
+points_percent = 2.0

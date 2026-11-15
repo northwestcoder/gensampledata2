@@ -1,0 +1,25 @@
+# Only send inputs required by Dockerfile. Build the workbench first.
+**
+!Dockerfile
+!.dockerignore
+!pyproject.toml
+!README.md
+!uv.lock
+!src/
+!src/**
+!support/
+!support/**
+!artifacts/
+artifacts/*
+!artifacts/workbench-dist/
+!artifacts/workbench-dist/**
+
+# Exclude incidental files even within included source/data directories.
+**/__pycache__/
+**/*.py[cod]
+**/.DS_Store
+**/._*
+**/.env
+**/.env.*
+**/*.pem
+**/*.key

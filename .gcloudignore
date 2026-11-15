@@ -1,0 +1,27 @@
+# Cloud Build uses Dockerfile; upload only its inputs.
+# Do not include .gitignore: Git excludes the required prebuilt workbench.
+*
+!.gcloudignore
+!Dockerfile
+!.dockerignore
+!pyproject.toml
+!README.md
+!uv.lock
+!src/
+!src/**
+!support/
+!support/**
+!artifacts/
+artifacts/*
+!artifacts/workbench-dist/
+!artifacts/workbench-dist/**
+
+# Exclude incidental files even within included source/data directories.
+**/__pycache__/
+**/*.py[cod]
+**/.DS_Store
+**/._*
+**/.env
+**/.env.*
+**/*.pem
+**/*.key

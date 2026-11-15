@@ -1,0 +1,258 @@
+{
+  "format_version": 2,
+  "description": "Complete original support files, preserved byte for byte. Duplicates and input ordering are retained.",
+  "datasets": {
+    "birthdates.csv": {
+      "parser": "lines",
+      "entries": 3000,
+      "bytes": 32999,
+      "sha256": "c345b004c2f80565ec8850a0ef7be149020973507e9b121ae7ca18fab950e965",
+      "usage": "Customer birthdates"
+    },
+    "cities.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 391770,
+      "sha256": "b5f6a3ea0a4b669b608be750698cf9b123976f9f0ffdfdd55972e0b02e1d2744",
+      "usage": "City mutations"
+    },
+    "common_given_names.csv": {
+      "parser": "csv_cells",
+      "entries": 5163,
+      "bytes": 36124,
+      "sha256": "1e6fa923e23036011243e6327338e5cedcf4c728f033fd59e602e5e2a7b7ca57",
+      "usage": "Given-name mutations and explicit field pools"
+    },
+    "companies.csv": {
+      "parser": "lines",
+      "entries": 100000,
+      "bytes": 1753945,
+      "sha256": "49bd23a3148b1198f976f13babced2f3a3435a340d76a84241d0c83366f43220",
+      "usage": "Customer employers"
+    },
+    "domains.csv": {
+      "parser": "lines",
+      "entries": 53,
+      "bytes": 582,
+      "sha256": "712411956f84e210e287c314acc31ca52fd92a1a2101531a958154571a90c017",
+      "usage": "Customer email domains and email mutations"
+    },
+    "emailcampaigns.csv": {
+      "parser": "lines",
+      "entries": 20,
+      "bytes": 254,
+      "sha256": "e9df5122218063c73580225df7aa46b43946265e2bb2a5d2ba447942d88dd2c6",
+      "usage": "Email event types and clickstream campaigns"
+    },
+    "firstnames_female.csv": {
+      "parser": "lines",
+      "entries": 10000,
+      "bytes": 71629,
+      "sha256": "75555c7253e4bde08046bb6c5cd873e893ffe7ff0e334c2c9ac37851b130e321",
+      "usage": "Customer first names"
+    },
+    "firstnames_male.csv": {
+      "parser": "lines",
+      "entries": 10000,
+      "bytes": 68887,
+      "sha256": "3594b76735f180f67dd673c7188c853e74769c850c0350ab5e61cbe7569dfef7",
+      "usage": "Customer first names"
+    },
+    "given_name_alternatives.csv": {
+      "parser": "csv_rows",
+      "entries": 1082,
+      "bytes": 78074,
+      "sha256": "f49ddc60a1bb3b11c582311450b69d8e38197b217df6d8da3860ad248c709cbe",
+      "usage": "Nickname transformations; complete rows also available"
+    },
+    "injuries.csv": {
+      "parser": "lines",
+      "entries": 23,
+      "bytes": 578,
+      "sha256": "8d492ac2c1948f91f3c2d6e5d627891de555bc19e36736f3ca4c9b05c166b699",
+      "usage": "Safety report descriptions"
+    },
+    "ip_addresses.csv": {
+      "parser": "lines",
+      "entries": 2000,
+      "bytes": 28512,
+      "sha256": "1f7ccad9da1a590a9eb6cf101a41eb7f9df3dbca335e98ef5218c6243cfb552b",
+      "usage": "Mobile and Wi-Fi client addresses"
+    },
+    "ipv6.csv": {
+      "parser": "lines",
+      "entries": 2000,
+      "bytes": 28404,
+      "sha256": "481dd81dfaedc7026eca779d0f131050676af65a174c68fd47bd82113ef8042a",
+      "usage": "Clickstream client addresses (original file name retained)"
+    },
+    "jobs.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 655925,
+      "sha256": "301e9eab5e07f894155c24941139a8520b60e0f626f189312609f25d5a80dcea",
+      "usage": "Customer job titles"
+    },
+    "last1hourdates.csv": {
+      "parser": "lines",
+      "entries": 1000,
+      "bytes": 19999,
+      "sha256": "639b93b8a4c04c7feebbe2b25ce94003980fd951283fcf6ae62d11b48e68a5d3",
+      "usage": "Mobile and Wi-Fi activity timestamps"
+    },
+    "last24hoursdates.csv": {
+      "parser": "lines",
+      "entries": 5000,
+      "bytes": 99999,
+      "sha256": "8d62c2360edda439e7bc31888ba65287e7b1d7e2cf37f48f1cb40be129d7cacd",
+      "usage": "Clickstream and daily transaction timestamps"
+    },
+    "lastfiveyeardates.csv": {
+      "parser": "lines",
+      "entries": 50000,
+      "bytes": 999999,
+      "sha256": "8dcedb722dbc1c59af98c69b7ca391d037d7eef0c69ac5dc5e871c50ecb76069",
+      "usage": "Full-history transaction and event timestamps"
+    },
+    "lastnames.csv": {
+      "parser": "lines",
+      "entries": 50120,
+      "bytes": 356254,
+      "sha256": "7643a92085cf0eee9930f426a4d7ea41faf790d7fcba1efe6abb1b1b3622b7d5",
+      "usage": "Customer surnames"
+    },
+    "latlongs.csv": {
+      "parser": "lines",
+      "entries": 99999,
+      "bytes": 1905902,
+      "sha256": "8edf77d6a1f14b7225a4f544d094c5d930e356ec36c62ea242c0a8bcd9faf1af",
+      "usage": "Location report coordinates"
+    },
+    "lmscreatedates.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 329999,
+      "sha256": "a5e1526b0c53ee1f4965515e70f2476b83f4f1a38f77df6b384e170744394826",
+      "usage": "Loyalty account creation dates"
+    },
+    "loyaltyprograms.csv": {
+      "parser": "lines",
+      "entries": 8,
+      "bytes": 89,
+      "sha256": "28c0c8a00b55a9b41453f4f0f43a2cfd7faf91b3b3ad2ab0dcb58376aaf43a4e",
+      "usage": "Loyalty program names"
+    },
+    "loyaltytiers.csv": {
+      "parser": "lines",
+      "entries": 5,
+      "bytes": 34,
+      "sha256": "13bde7eae3f3149fe304fca7245bc6c3811666227ee77f0f46cf9d7cd76ffe05",
+      "usage": "Loyalty tiers"
+    },
+    "macaddr.csv": {
+      "parser": "lines",
+      "entries": 1000,
+      "bytes": 17999,
+      "sha256": "c0b8ef532d8d789fc473236cbf482981b7d2623f7d8099e4d705b79b09b5af0f",
+      "usage": "Explicit device/address field pools"
+    },
+    "phones.csv": {
+      "parser": "lines",
+      "entries": 300000,
+      "bytes": 5146917,
+      "sha256": "8ffa8de85b18ffe44300c6f3d309438526e24a6e653a8683d950deab25fb1beb",
+      "usage": "Customer phone numbers"
+    },
+    "postalcodes.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 213854,
+      "sha256": "57b99079fb690908157553aa669af29e22ed3563cdb256e04079f7a090aa1448",
+      "usage": "Customer postal codes and postal mutations"
+    },
+    "prefix_female.csv": {
+      "parser": "lines",
+      "entries": 300,
+      "bytes": 1363,
+      "sha256": "fa5df4cbe000bae19670091ccc69f0aa5967a6f537f11fc5902c53a03990bfa2",
+      "usage": "Customer name prefixes"
+    },
+    "prefix_male.csv": {
+      "parser": "lines",
+      "entries": 300,
+      "bytes": 1199,
+      "sha256": "47f4628c65847c5d248873bbae3554e50cafebe8a10218d331946bea96b19003",
+      "usage": "Customer name prefixes"
+    },
+    "randowords.csv": {
+      "parser": "lines",
+      "entries": 3000,
+      "bytes": 19589,
+      "sha256": "e15e63fba7e6880dd294e8fb2b86888c27096f5b76d56da00b1ef85a6a9cb18e",
+      "usage": "Customer email local parts"
+    },
+    "sha256.csv": {
+      "parser": "lines",
+      "entries": 4000,
+      "bytes": 259999,
+      "sha256": "48354abb064057bae9a2a1bd3b7f76136fafcc877fc1d9e2afeef24cfd53b64a",
+      "usage": "Mobile and Wi-Fi hashes"
+    },
+    "states.csv": {
+      "parser": "lines",
+      "entries": 600,
+      "bytes": 3760,
+      "sha256": "006aa766ddd89806ad2ed8be2e95112c5b5965300492a028d6e137f590a0992e",
+      "usage": "State mutations"
+    },
+    "streetnames.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 610675,
+      "sha256": "120879bfcb91b73aca57c0a55b98abf1e8dd15bde46de21a6be3afa9166e5093",
+      "usage": "Customer street addresses and address mutations"
+    },
+    "streetnames2.csv": {
+      "parser": "lines",
+      "entries": 1000,
+      "bytes": 9509,
+      "sha256": "8c7c9752026ea34858cfedb4e275dc6c7a9da56a280d937e2a50f3a212fa6ac7",
+      "usage": "Secondary address/unit fragments"
+    },
+    "tld.csv": {
+      "parser": "lines",
+      "entries": 300,
+      "bytes": 1222,
+      "sha256": "383b804e4c0e4a9378f7889ff8f75b9cb98c6787e386a97622352ad5284b1be2",
+      "usage": "Generated email domain suffixes"
+    },
+    "uris.csv": {
+      "parser": "lines",
+      "entries": 1000,
+      "bytes": 13157,
+      "sha256": "860dd2b45b28ef6f09b81bb6e3b8948391f30a626d65164f2042780770963a24",
+      "usage": "Clickstream and mobile page/referrer values"
+    },
+    "us_cities_states_counties.csv": {
+      "parser": "csv_rows",
+      "entries": 63210,
+      "bytes": 2621448,
+      "sha256": "f9f2aa8eb10fade89ff5f2f4dcda608771a19549b9fffde6e5de1972c54198d1",
+      "usage": "Complete structured city/state/county records"
+    },
+    "user_agent.csv": {
+      "parser": "lines",
+      "entries": 758,
+      "bytes": 70652,
+      "sha256": "376ba4eea005e96ef43bbe2568172a95d96b22dad179898bce2119711cc7bb23",
+      "usage": "Clickstream user agents"
+    },
+    "uuid4.csv": {
+      "parser": "lines",
+      "entries": 30000,
+      "bytes": 1109999,
+      "sha256": "f9c999b0595966271032f0e29e40396918a21c68354ff08e294138bf2b63b2f0",
+      "usage": "Shared synthetic device identifiers"
+    }
+  }
+}
